@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="79dp"
+
+        android:layout_marginBottom="88dp"
+        android:text="  ĐÂY LÀ TRANG ĐĂNG KÝ"
+        android:textColor="#cb356b"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/signupId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signupId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="Tên đăng nhập"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/signupPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/signupPass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="Mật khẩu"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/signupMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupId" />
+
+    <EditText
+        android:id="@+id/signupRePass"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="Nhập lại mật khẩu"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/signupMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signupPass" />
+
+    <EditText
+        android:id="@+id/signupMail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupPass" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="164dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="192dp"
+        android:text="Đăng ký"
+        app:backgroundTint="#A62222"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="@+id/btnBack"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/signupMail" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="146dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="37dp"
+        android:text="Quay lại"
+        app:backgroundTint="#AE2222"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignup" />
+</androidx.constraintlayout.widget.ConstraintLayout>
